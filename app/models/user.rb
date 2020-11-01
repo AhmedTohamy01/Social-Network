@@ -15,9 +15,9 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
 
-  has_many :confirmed_friendships, -> { where('confirmed = ?', true) },
+  has_many :friendships, -> { where('confirmed = ?', true) },
            class_name: 'Friendship', dependent: :destroy
-  has_many :friends, through: :confirmed_friendships
+  has_many :friends, through: :friendships
 
   has_many :pending_friendships, -> { where('confirmed = ?', false) },
            class_name: 'Friendship', foreign_key: 'user_id', dependent: :destroy
