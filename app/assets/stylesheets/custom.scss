@@ -176,10 +176,6 @@ form {
       padding: 8px;
       background-color: $primary-color-light;
     }
-
-    input[type="checkbox"] {
-      width: auto;
-    }
   }
 
   .actions {
@@ -446,3 +442,16 @@ form {
   border: #e4e6eb;
   background-color: #e4e6eb;
 }
+
+// .friends-heading {
+//   top: 30px;
+//   position: fixed;
+//   width: 60vw;
+//   min-width: 20vw;
+//   height: 8vh;
+//   font-size: 2.5rem;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: #eee;
+// }
