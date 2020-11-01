@@ -13,4 +13,15 @@ module FriendshipsHelper
   def format_stat(count, word)
     pluralize(count, word).split(' ')
   end
+
+  def get_stats(friendship)
+    case friendship
+    when :friend
+      current_user.friends.count
+    when :friend_requests
+      current_user.friend_requests.count
+    when :pending_friends
+      current_user.pending_friends.count
+    end    
+  end
 end

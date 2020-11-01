@@ -4,13 +4,7 @@
 <section class="users-section">
   <% if @friends_hash[:friends] %>
     <ul class="users-list">
-      <% if @friends_hash[:friends_type] == 'friend' %>
-        <%= render 'friend' %>
-      <% elsif @friends_hash[:friends_type] == 'friend_request' %>
-        <%= render 'friend_request' %>
-      <% elsif @friends_hash[:friends_type] == 'pending_friend' %>
-        <%= render 'pending_friend' %>
-      <% end %>
+      <%= render @friends_hash[:friends_type] %>
     </ul>
     <%= will_paginate @friends_hash[:friends] %>
   <% end %>
