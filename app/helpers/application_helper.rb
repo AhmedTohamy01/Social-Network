@@ -14,6 +14,10 @@ module ApplicationHelper
     !current_user.nil?
   end
 
+  def current_user?(user)
+    user && user == current_user
+  end
+
   def menu_link_to(link_text, link_path)
     class_name = current_page?(link_path) ? 'menu-item active' : 'menu-item'
 
