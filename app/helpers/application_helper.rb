@@ -1,5 +1,4 @@
 module ApplicationHelper
-  # Returns the full title on a per-page basis.
   def full_title(page_title = '')
     base_title = 'Ruby on Rails Social Scaffold'
     if page_title.empty?
@@ -9,7 +8,6 @@ module ApplicationHelper
     end
   end
 
-  # Returns true if the user is logged in, false otherwise.
   def logged_in?
     !current_user.nil?
   end
