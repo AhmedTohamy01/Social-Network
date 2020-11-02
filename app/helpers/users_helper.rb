@@ -7,23 +7,23 @@ module UsersHelper
   end
 
   def show_confirm_friend?(user)
-    !current_user?(user) && current_user.friend_requests.include?(user)
+    current_user.friend_requests.include?(user)
   end
 
   def show_friends?(user)
-    !current_user?(user) && current_user.friend?(user)
+    current_user.friend?(user)
   end
 
   def show_cancel_request?(user)
-    !current_user?(user) && current_user.pending_friends.include?(user)
+    current_user.pending_friends.include?(user)
   end
 
   def show_confirm_delete_friend?(user)
-    !current_user?(user) && current_user.friend_requests.include?(user)
+    current_user.friend_requests.include?(user)
   end
 
   def show_add_friend?(user)
-    !current_user?(user) && current_user.friends.exclude?(user) &&
-      current_user.pending_friends.exclude?(user) && current_user.friend_requests.exclude?(user)
+    current_user.friends.exclude?(user) && current_user.pending_friends.exclude?(user) &&
+      current_user.friend_requests.exclude?(user)
   end
 end
