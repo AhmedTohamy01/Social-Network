@@ -6,9 +6,7 @@
     </div>
     <div class='post-liking'>
       <span class='timestamp'> Posted <%= time_ago_in_words(post.created_at) %> ago. </span>
-      <% if current_user.friend?(post.user) || post.user == current_user %> 
-        <%= like_or_dislike_btn(post) %>
-      <% end %>
+      <%= like_or_dislike_btn(post) %>
     </div>
   </div>
   <p class="post-content">
@@ -26,7 +24,7 @@
       </div>
     <% end %>
 
-    <% if current_user.friend?(post.user) || post.user  == current_user %> 
+    <% if show_comment_button(post) %> 
       <%= form_for(post.comments.new, url: post_comments_path(post)) do |form| %>
         <%= form.text_field :content, id: :comment_content, class: 'form-control', placeholder: 'Add new Comment' %>
         <%= form.submit 'Comment', class: 'btn btn-secondary' %>
