@@ -22,6 +22,6 @@ module FriendshipsHelper
       current_user.friend_requests.count
     when :pending_friends
       current_user.pending_friends.count
-    end    
+    end
   end
 end
