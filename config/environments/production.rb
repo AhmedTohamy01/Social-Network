@@ -1,4 +1,5 @@
 Rails.application.configure do
+  config.serve_static_assets = true
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
