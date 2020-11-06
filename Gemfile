@@ -8,10 +8,11 @@ gem 'bootstrap-sass', '3.4.1'
 gem 'carrierwave', '~> 2.1'
 gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 gem 'rails', '~> 6.0', '>= 6.0.3.4'
+gem 'activesupport', '~> 6.0', '>= 6.0.3.4'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
-gem 'puma', '~> 3.12'
+gem 'puma', '~> 5.0', '>= 5.0.4'
 gem 'sass-rails', '~> 6.0'
 gem 'webpacker', '~> 5.2', '>= 5.2.1'
 # Use Uglifier as compressor for JavaScript assets

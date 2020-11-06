@@ -183,7 +183,8 @@ GEM
       ast (~> 2.4.1)
     pg (1.2.3)
     public_suffix (4.0.6)
-    puma (3.12.6)
+    puma (5.0.4)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rack-proxy (0.6.5)
       rack
@@ -321,6 +322,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport (~> 6.0, >= 6.0.3.4)
   bootsnap (>= 1.1.0)
   bootstrap-sass (= 3.4.1)
   bootstrap-will_paginate (~> 1.0)
@@ -341,7 +343,7 @@ DEPENDENCIES
   mini_magick (~> 4.10, >= 4.10.1)
   omniauth-facebook (~> 7.0)
   pg (>= 0.18, < 2.0)
-  puma (~> 3.12)
+  puma (~> 5.0, >= 5.0.4)
   rails (~> 6.0, >= 6.0.3.4)
   rspec-rails (~> 4.0, >= 4.0.1)
   rubocop (~> 1.1)
