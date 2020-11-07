@@ -23,6 +23,8 @@
 
 * Configuration - from the project directory, run``` bundle install ```from command line (terminal) to install all the required gems.
 
+* Test the app using RSpec by running ```bundle exec rspec``` in the root directory.
+
 * Database creation - After cloning the project, navigate to the project directory (```cd Social-Network```), then execute the following commands``` rails db:create ```, then ``` rails db:migrate ```to create and migrate database on the local machine.
 
 * Start Rails sever by running the command ```rails sever``` or ```rails s``` in the root directory.
@@ -30,6 +32,9 @@
 * Open the web browser and type  'localhost:3000' in the address bar.
 
 * All the features are implemented in the user interface.
+
+
+> Check out the Live Demo of our App [here](https://mysocial-net.herokuapp.com/).
 
 
 ## Authors
