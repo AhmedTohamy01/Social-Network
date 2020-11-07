@@ -23,9 +23,11 @@
 
 * Configuration - from the project directory, run``` bundle install ```from command line (terminal) to install all the required gems.
 
+* Database creation - After cloning the project, navigate to the project directory (```cd Social-Network```), then execute the following commands``` rails db:create ```, then ``` rails db:migrate ```to create and migrate database on the local machine.
+
 * Test the app using RSpec by running ```bundle exec rspec``` in the root directory.
 
-* Database creation - After cloning the project, navigate to the project directory (```cd Social-Network```), then execute the following commands``` rails db:create ```, then ``` rails db:migrate ```to create and migrate database on the local machine.
+* Run ```rails db:seed``` to push some included sample data to the database.
 
 * Start Rails sever by running the command ```rails sever``` or ```rails s``` in the root directory.
 
