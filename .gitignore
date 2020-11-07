@@ -17,7 +17,7 @@
 /storage/*
 !/storage/.keep
 
-node_modules/
+/node_modules
 /yarn-error.log
 
 /public/assets
@@ -32,3 +32,6 @@ node_modules/
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+config/master.key
+config/credentials.yml.enc
