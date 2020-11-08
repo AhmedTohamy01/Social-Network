@@ -36,12 +36,7 @@
 * All the features are implemented in the user interface.
 
 
-<<<<<<< HEAD
-## Check out the Live Version [here](https://mysocial-net.herokuapp.com/).
-=======
 > Check out the Live Demo of our App [here](https://microverse-social-network.herokuapp.com/).
->>>>>>> deploy
-
 
 ## Authors
 
