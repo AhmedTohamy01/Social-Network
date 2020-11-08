@@ -1,14 +1,14 @@
 # Project: Social media website
-## Milestone 6: Friendships v2
+## Milestone 8: Deploy your app to Heroku
 
-> This is a Social Media Website project milestone 6 (Friendships v1). In this milestone, we created Friendship data model and necessary associations and required class methods for user fiendships.
+> This is a Social Media Website project milestone 8. In this milestone, we created deployed to heroku, pushed sample data to heroku through ```rails db:migrate``` and ```rails db:seed```.
 
 > The full project description can be found [here](https://microverse.pathwright.com/library/fast-track-curriculum/69047/path/step/49736080/).
 
 
 ##  What we implemented:
 
-* In this milestone, we have added some interactive and user-friendly friendship features which inlude Friends, Sent Requests and Friend Requests buttons, Friendship stats, Send request, Accept request, and Cancel requests buttons.
+* We have added some interactive and user-friendly friendship features which inlude Friends, Sent Requests and Friend Requests buttons, Friendship stats, Send request, Accept request, and Cancel requests buttons.
 
 * We have written couple of model tests and a comprehensive integration tests using RSpec/Capybara test suites to simulate the data models and browser behavior.
 
@@ -36,7 +36,11 @@
 * All the features are implemented in the user interface.
 
 
+<<<<<<< HEAD
 ## Check out the Live Version [here](https://mysocial-net.herokuapp.com/).
+=======
+> Check out the Live Demo of our App [here](https://microverse-social-network.herokuapp.com/).
+>>>>>>> deploy
 
 
 ## Authors
