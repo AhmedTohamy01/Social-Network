@@ -36,7 +36,7 @@
 * All the features are implemented in the user interface.
 
 
-> Check out the Live Demo of our App [here](https://mysocial-net.herokuapp.com/).
+## Check out the Live Version [here](https://mysocial-net.herokuapp.com/).
 
 
 ## Authors
