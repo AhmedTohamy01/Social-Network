@@ -1,10 +1,11 @@
 <li class="post">
   <div>
     <div class='post-attribution' >
-      <%= link_to post.user.name, user_path(post.user), class: 'post-author' %>
+      <%= gravatar_for post.user, size: 40 %>
+      <%= link_to post.user.name, user_path(post.user), id: 'logo', class: 'post-author' %>
     </div>
     <div class='post-liking'>
-      <span class='post-date'> <%= post.created_at.strftime("%Y/%m/%d") %> </span>
+      <span class='timestamp'> Posted <%= time_ago_in_words(post.created_at) %> ago. </span>
       <%= like_or_dislike_btn(post) %>
     </div>
   </div>
@@ -16,15 +17,18 @@
     <% post.comments.each do |comment| %>
       <div class="post-comments">
         <p>
-          <b><%= comment.user.name %>:</b> <%= comment.content %>
+          <%= gravatar_for comment.user, size: 40 %>
+          <b><%= link_to comment.user.name, user_path(comment.user) %>:</b> <%= comment.content %>
         </p>
-        <span> <%= comment.created_at.strftime("%Y/%m/%d") %> </span>
+        <span class='timestamp'><%= time_ago_in_words(comment.created_at) %></span>
       </div>
     <% end %>
 
-    <%= form_for(post.comments.new, url: post_comments_path(post)) do |form| %>
-      <%= form.text_field :content, id: :comment_content, class: 'form-control', placeholder: 'Add new Comment' %>
-      <%= form.submit 'Comment', class: 'btn btn-secondary' %>
+    <% if show_comment_button(post) %> 
+      <%= form_for(post.comments.new, url: post_comments_path(post)) do |form| %>
+        <%= form.text_field :content, id: :comment_content, class: 'form-control', placeholder: 'Add new Comment' %>
+        <%= form.submit 'Comment', class: 'btn btn-secondary' %>
+      <% end %>
     <% end %>
   </div>
 </li>

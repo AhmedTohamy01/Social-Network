@@ -1,0 +1,14 @@
+<li class="friend-response">
+  <div>
+    <%= gravatar_for user, size: 50 %>
+    <%= link_to user.name, user %>
+  </div>
+  <% unless current_user?(user) %>
+    <% if show_add_friend?(user) %>
+      <%= form_with(model: Friendship.new(friend_id: user.id), local: true) do |f| %>
+        <div><%= hidden_field_tag :friend_id, user.id %></div>
+        <%= f.submit "Add Friend", class: "btn btn-primary btn-sm friends-button add-friend" %>
+      <% end %>
+    <% end %>    
+  <% end %>
+</li>

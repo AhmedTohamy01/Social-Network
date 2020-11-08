@@ -1,93 +1,64 @@
-# Scaffold for social media app with Ruby on Rails
+# Project: Social media website
+## Milestone 6: Friendships v2
 
-> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
+> This is a Social Media Website project milestone 6 (Friendships v1). In this milestone, we created Friendship data model and necessary associations and required class methods for user fiendships.
 
-## Built With
-
-- Ruby v2.7.0
-- Ruby on Rails v5.2.4
-
-## Live Demo
-
-TBA
+> The full project description can be found [here](https://microverse.pathwright.com/library/fast-track-curriculum/69047/path/step/49736080/).
 
 
-## Getting Started
+##  What we implemented:
 
-To get a local copy up and running follow these simple example steps.
+* In this milestone, we have added some interactive and user-friendly friendship features which inlude Friends, Sent Requests and Friend Requests buttons, Friendship stats, Send request, Accept request, and Cancel requests buttons.
 
-### Prerequisites
-
-Ruby: 2.6.3
-Rails: 5.2.3
-Postgres: >=9.5
-
-### Setup
-
-Instal gems with:
-
-```
-bundle install
-```
-
-Setup database with:
-
-```
-   rails db:create
-   rails db:migrate
-```
-
-### Github Actions
-
-To make sure the linters' checks using Github Actions work properly, you should follow the next steps:
-
-1. On your recently forked repo, enable the GitHub Actions in the Actions tab.
-2. Create the `feature/branch` and push.
-3. Start working on your milestone as usual.
-4. Open a PR from the `feature/branch` when your work is done.
+* We have written couple of model tests and a comprehensive integration tests using RSpec/Capybara test suites to simulate the data models and browser behavior.
 
 
-### Usage
+* Ruby version  - 2.7.0
 
-Start server with:
+* Rails version - 6.0.3.4
 
-```
-    rails server
-```
+* Test Suite: RSpec/Capybara
 
-Open `http://localhost:3000/` in your browser.
+* System dependencies - required gems are bundled with Gemfile 
 
-### Run tests
+* Configuration - from the project directory, run``` bundle install ```from command line (terminal) to install all the required gems.
 
-```
-    rpsec --format documentation
-```
+* Database creation - After cloning the project, navigate to the project directory (```cd Social-Network```), then execute the following commands``` rails db:create ```, then ``` rails db:migrate ```to create and migrate database on the local machine.
 
-> Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
+* Test the app using RSpec by running ```bundle exec rspec``` in the root directory.
 
-### Deployment
+* Run ```rails db:seed``` to push some included sample data to the database.
 
-TBA
+* Start Rails sever by running the command ```rails sever``` or ```rails s``` in the root directory.
+
+* Open the web browser and type  'localhost:3000' in the address bar.
+
+* All the features are implemented in the user interface.
+
+
+## Check out the Live Version [here](https://mysocial-net.herokuapp.com/).
+
 
 ## Authors
 
-TBA
+👤 **Ahmed Tohamy**
+
+- Github: [@githubhandle](https://github.com/AhmedTohamy01) 
+- Twitter: [@twitterhandle](https://twitter.com/AhmedTohamy01) 
+- Linkedin: [linkedin](https://www.linkedin.com/in/ATohamy) 
+
+👤 **Sunday Uche Ezeilo**
+
+- Github: [@sundayezeilo](https://github.com/ezeilo-su)
+- Twitter: [@SundayEzeilo](https://twitter.com/SundayEzeilo)
+- Linkedin: [Sunday Ezeilo](https://www.linkedin.com/in/sunday-ezeilo-a6a67664/)
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues and feature requests will be appriciated.
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/AhmedTohamy01/Social-Network/issues)
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-TBA
-
-## 📝 License
-
-TBA
-
+Show support by giving a ⭐️ if you like this project!

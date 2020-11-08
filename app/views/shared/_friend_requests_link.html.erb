@@ -1,0 +1,23 @@
+<div class="bg-light border-right" id="sidebar-wrapper">
+  <div class="sidebar-heading">All Friends</div>
+  <div class="list-group list-group-flush">
+    <a class="list-group-item list-group-item-action bg-light" href="<%= friendships_url(friendship_type: 'friend') %>">
+      <strong id="friends" class="stat">
+        <%= get_stats(:friend) %>
+      </strong>
+      <%= format_stat(get_stats(:friend), 'Friend')[1] %>
+    </a>
+    <a class="list-group-item list-group-item-action bg-light" href="<%= friendships_url(friendship_type: 'friend_request') %>">
+      <strong id="friends" class="stat">
+        <%= get_stats(:friend_requests) %>
+      </strong>
+      Friend <%= format_stat(get_stats(:friend_requests), 'Request')[1] %>  
+    </a>
+    <a class="list-group-item list-group-item-action bg-light" href="<%= friendships_url(friendship_type: 'pending_friend') %>">
+      <strong id="friends" class="stat">
+        <%= get_stats(:pending_friends) %>
+      </strong>
+      Sent <%= format_stat(get_stats(:pending_friends), 'Request')[1] %>
+    </a>
+  </div>
+</div>

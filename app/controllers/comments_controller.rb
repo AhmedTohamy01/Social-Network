@@ -5,10 +5,11 @@ class CommentsController < ApplicationController
     @comment.user = current_user
 
     if @comment.save
-      redirect_to posts_path, notice: 'Comment was successfully created.'
+      flash[:success] = 'Comment was successfully created.'
     else
-      redirect_to posts_path, alert: @comment.errors.full_messages.join('. ').to_s
+      flash[:danger] = @comment.errors.full_messages.join('. ').to_s
     end
+    redirect_to posts_path
   end
 
   private
