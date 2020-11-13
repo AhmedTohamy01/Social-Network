@@ -22,7 +22,7 @@ RSpec.describe Post, type: :model do
     end
 
     context 'with valid attributes' do
-      it 'should not be valid when user is nil' do
+      it 'should be valid with all attributes valid' do
         @post.content = 'Lorem ipsum dolor'
         @post.save
         expect(@post).to be_valid
